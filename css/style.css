@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* general selectors */
 .flex {
     display: flex;
 }
@@ -13,10 +15,8 @@
     align-items: center;
 }
 
-div.screen-user img,
-div.view-commands img {
-    height: 100%;
-}
+/* view commands selectors */
+
 
 div.view-commands {
     height: 1.5rem;
@@ -43,16 +43,49 @@ div.view-commands span {
     border-radius: 0.4rem;
 }
 
+.user-screen img,
+.user-screen-icons img,
+div.view-commands img,
+.user-mic {
+    height: 100%;
+}
+/* users screens selectors */
+
+main {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    background-color: #000000;
+    padding: 4rem 3rem 1rem;
+}
+
+div.users-screens {
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .container {
     position: relative;
 }
 
-.user-screen-icons {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    -webkit-filter: invert(100%); /* Safari/Chrome */
-    filter: invert(100%);
+.user-screen {
+    height: 110px;
+    margin: 0.2rem 1rem 0 1rem;
 }
 
+.user-screen-icons {
+    position: absolute;
+    height: 1rem;
+    bottom: 0.5rem;
+    left: 1rem;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    background-color: rgb(99, 111, 121, 0.5);
+    padding: 0 0.3rem 0.2rem;
+}
+
+/* footer selectors */
+
+footer {
+    height: 70px;
+    background-color: #222222;
+}
