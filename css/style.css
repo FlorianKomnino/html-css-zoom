@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+}
+
+div.screen-user img {
+    height: 100%;
+    width: 100%;
+}
+
+.user-screen-icons {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
