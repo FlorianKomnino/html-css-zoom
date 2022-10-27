@@ -56,6 +56,7 @@ main {
     width: 100vw;
     background-color: #000000;
     padding: 4rem 3rem 1rem;
+    overflow: hidden;
 }
 
 div.users-screens {
@@ -87,5 +88,22 @@ div.users-screens {
 
 footer {
     height: 70px;
+    width: 100%;
     background-color: #222222;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    color: white;
+    display: inline;
+}
+
+.footer-icons {
+    font-size: 1.5rem;
+    margin: 0.5rem
+}
+
+li div {
+    display: inline-block;
 }
